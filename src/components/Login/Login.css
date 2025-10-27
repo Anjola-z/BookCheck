@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.login{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 100vh;
+    width: 210vh;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-image: url(login.jpg);
+}
+
+.login.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.log{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 10rem;
+    height: 18rem;
+}
+
+.logtext{
+    margin-top: 5rem;
+    font-size: 6rem;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+   
+}
+
+.bc{
+    color:  rgb(9, 25, 190);
+    font-size: 40px;
+}
+
+.login-form{
+    position: absolute;
+    top: 0;
+    left:65%; /* starts halfway across */
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.login-items{
+    margin-top: 2rem;
+}
+
+.input-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#username{
+    margin-top: 1rem;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom-style: groove;
+}
+
+#username:focus{
+    outline: none;
+}
+
+#password{
+    margin-top: 1rem;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom-style: groove;
+}
+
+#password:focus{
+    outline: none;
+}
+
+#show{
+    background-color: transparent;
+    color: black;
+    width: 3rem;
+}
+
+.submit{
+    margin-top: 3rem;
+}
+
+.submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.option{
+    margin-left: 0;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+.option a{
+    text-decoration: none;
+    color:  rgb(9, 25, 190);
+}
+
+.error-message{
+    margin-top: 4px;
+    margin-left: 0;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: red;
+}

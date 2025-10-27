@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sign{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 10rem;
+    height: 18rem;
+}
+
+.signtext{
+    margin-top: 5rem;
+    font-size: 6rem;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+   
+}
+
+.signup{
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 100vh;
+    width: 210vh;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-image: url(login.jpg);
+}
+
+.signup.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.bc{
+    color:  rgb(9, 25, 190);
+    font-size: 40px;
+}
+
+.signup-form{
+    position: absolute;
+    top: 0;
+    left:65%; /* starts halfway across */
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.input-box{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#username{
+    margin-top: 1rem;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom-style: groove;
+}
+
+#username:focus{
+    outline: none;
+}
+
+#email{
+    margin-top: 1rem;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom-style: groove;
+}
+
+#email:focus{
+    outline: none;
+}
+
+#password{
+    margin-top: 1rem;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom-style: groove;
+}
+
+#password:focus{
+    outline: none;
+}
+
+.submit{
+    margin-top: 2rem;
+}
+
+.submit a{
+    text-decoration: none;
+    color: white;
+}
+
+.optionb{
+    margin-left: 0;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.optionb a{
+    text-decoration: none;
+    color:  rgb(9, 25, 190);
+}
+
+.error-message{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0rem;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: red;
+}
