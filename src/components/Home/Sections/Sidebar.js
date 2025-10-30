@@ -5,7 +5,7 @@ import { GoArrowLeft } from "react-icons/go";
 import { CgHome } from "react-icons/cg";
 import { BsBook } from "react-icons/bs";
 
-function Sidebar(){
+function Sidebar({ onDashboardClick }){
     const navigate = useNavigate();
     const [collapsed, setCollapsed] = useState(false);
 
@@ -18,8 +18,8 @@ function Sidebar(){
            </div>
 
            <nav className="dashbook">
-           <button><CgHome /><a href="">Dashboard</a></button>
-           <button><BsBook /><a href="">Books</a></button>
+           <button onClick={onDashboardClick}><CgHome />Dashboard</button>
+           <button onClick = {() => navigate("/books")}><BsBook />Books</button>
            </nav>
            
            <nav className="logsign">
